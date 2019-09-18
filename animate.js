@@ -38,7 +38,14 @@ function handleShipAnimation() {
 }
 
 function RenderNewObject(context) {
+  var canvas = document.getElementById('canvas');
   // Draw a new item here using the canvas 'context' variable
+  context.beginPath();
+  context.fillRect(25, 25, 100, 100);
+  context.translate(3,1);
+
+
+
 }
 
 function HandleNewObjectMovement() {

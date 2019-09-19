@@ -11,12 +11,13 @@ var SPACE_SHIP = {
   initialized : false,
   bullets : [],
   latest : {
-    x : 0,
-    y : 0
+    x : 50,
+    y : 50,
+    xx : 5,
+    yy : 2
   }
 };
-
-var NEW_OBJECT = {
+var PAB_OBJECT = {
   x : 0,
   y : 0
 };

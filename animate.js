@@ -36,21 +36,19 @@ function handleShipAnimation() {
     SPACE_SHIP.y = 300;
   }
 }
-
 function RenderNewObject(context) {
-  var canvas = document.getElementById('canvas');
+//  var canvas = document.getElementById('canvas');
   // Draw a new item here using the canvas 'context' variable
-  context.beginPath();
-  context.fillRect(25, 25, 100, 100);
-  context.translate(3,1);
-
+  context.fillStyle = 'rgb(200,0,0)';
+  context.fillRect(PAB_OBJECT.x, PAB_OBJECT.y, 100, 100);
 
 
 }
 
 function HandleNewObjectMovement() {
-  //NEW_OBJECT.x += 1;
-  //NEW_OBJECT.y += 1;
+  PAB_OBJECT.x += 1;
+  PAB_OBJECT.y += 1;
+  
 }
 
 function runGame() {

@@ -46,9 +46,29 @@ function RenderNewObject(context) {
 }
 
 function HandleNewObjectMovement() {
-  PAB_OBJECT.x += 1;
-  PAB_OBJECT.y += 1;
-  
+
+  if (PAB_OBJECT.x >= 500 || PAB_OBJECT.y >= 200)
+  {
+    PAB_OBJECT.x -= 2.5;
+    PAB_OBJECT.y -= 1;
+    forward = false;
+  }
+  else if (PAB_OBJECT.x == 0 || PAB_OBJECT.y == 0)
+  {
+    PAB_OBJECT.x += 2.5;
+    PAB_OBJECT.y += 1;
+    forward = true;
+  }
+  else if (forward == false) {
+    PAB_OBJECT.x -= 2.5;
+    PAB_OBJECT.y -= 1;
+    forward = false;
+  }
+  else if (forward == true){
+    PAB_OBJECT.x += 2.5;
+    PAB_OBJECT.y += 1;
+    forward = true;
+  }
 }
 
 function runGame() {

@@ -18,6 +18,8 @@ var SPACE_SHIP = {
   }
 };
 var PAB_OBJECT = {
-  x : 0,
-  y : 0
+  x : 1,
+  y : 1
 };
+
+var forward = true;
